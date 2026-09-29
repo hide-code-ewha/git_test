@@ -1,140 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>프로그래밍 핵심 개념 5가지 실습</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LOOP / 미디어 아트 코딩 스튜디오</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1 class="text-center title-navy">프로그래밍 핵심 개념 5가지 실습</h1>
-    <p class="text-center">변수 · 조건문 · 반복문 · 함수 · 데이터 타입, 5가지 개념을 직접 눌러보면서 익혀봅니다.</p>
+<aside>
+  <a class="brand" href="#top">✳ LOOP<span>.</span></a>
+  <small>MEDIA ART CODE LAB</small>
+  <nav>
+    <a class="active" href="#top">⌂ 학습 홈</a>
+    <a href="#lesson">◉ 초급 커리큘럼</a>
+    <a href="#practice">✦ 실습 놀이터</a>
+    <a href="#quiz">✓ 오늘의 퀴즈</a>
+  </nav>
+  <div class="side-progress">나의 진행률 <b id="progressText">20%</b><hr><small id="progressNote">첫 번째 캔버스를 완성했어요</small></div>
+  <div class="side-note">◌<p>코드는 도구예요.<br><b>감각을 실험해보세요.</b></p></div>
+  <footer>v1.1.0　<span>● online</span></footer>
+</aside>
 
-    <hr>
+<main id="top">
+  <header>학습 홈　/　초급 <div>♧　<b>H</b></div></header>
 
-    <!-- =============================================== -->
-    <!-- 01. 변수 (Variable): 데이터 담기 -->
-    <!-- =============================================== -->
-    <section class="lesson-section">
-        <h2>01. 변수 (Variable): 데이터 담기</h2>
-        <p>데이터를 저장해두는 '상자'입니다. 사용자의 아이디, 장바구니에 담긴 상품의 총액, 현재 시간 등 프로그램이 실행되는 동안 <span class="highlight-blue">기억하고 조작해야 하는 정보</span>들을 담아둡니다.</p>
+  <section class="hero">
+    <div>
+      <label>● BEGINNER TRACK</label>
+      <h1>코드로 만드는<br><em>첫 번째 장면</em></h1>
+      <p>프로그래밍을 처음 시작하는 미디어 아티스트를 위한<br>가장 직관적인 코드 실험실입니다.</p>
+      <small>◷ 약 15분　 ▣ 3개의 레슨　 ↗ 사전 지식 없음</small>
+      <a class="cta" href="#lesson">학습 시작하기　→</a>
+    </div>
+    <div class="hero-art"><i></i><i></i><i></i><span>GENERATIVE STUDY<br><b>001 / 003</b></span></div>
+  </section>
 
-        <pre><code>const userId = "haewa_2026";      // 문자열을 담는 변수
-const price = 4500;               // 숫자를 담는 변수
-const quantity = 2;
-const total = price * quantity;   // 변수끼리 계산해서 새 값 만들기</code></pre>
-
-        <div class="demo-box">
-            <label>아이디: <input type="text" id="var-userid" placeholder="예: haewa_2026"></label><br>
-            <label>상품 가격: <input type="number" id="var-price" placeholder="예: 4500"></label><br>
-            <label>수량: <input type="number" id="var-quantity" placeholder="예: 2"></label><br>
-            <button id="var-btn">변수에 저장하고 계산하기</button>
-            <p class="output" id="var-output">여기에 결과가 표시됩니다.</p>
+  <section id="lesson">
+    <label>START HERE</label>
+    <h2>초급 커리큘럼 <small>01 — 03</small></h2>
+    <div class="lessons">
+      <article class="current" id="lessonRow-1">
+        <strong>01</strong>
+        <div>
+          <label>FOUNDATION</label>
+          <h3>변수로 색상과 크기 다루기</h3>
+          <p>작품의 재료를 이름 붙이고 저장하는 방법</p>
+          <small>◷ 05분　 <span class="lesson-status" id="status-1" data-status="current"><mark>학습 중</mark></span></small>
         </div>
-    </section>
-
-    <hr>
-
-    <!-- =============================================== -->
-    <!-- 02. 조건문 (if): 분기 -->
-    <!-- =============================================== -->
-    <section class="lesson-section">
-        <h2>02. 조건문 (if): 분기</h2>
-        <p>주어진 상황에 따라 프로그램의 흐름을 나누는 갈래길입니다. "비밀번호가 일치하면 로그인을 승인하고, 틀리면 에러 메시지를 띄운다"처럼 <span class="highlight-blue">논리적인 판단</span>을 내릴 때 사용합니다.</p>
-
-        <pre><code>if (inputPassword === correctPassword) {
-    // 조건이 참(true)일 때 실행
-    console.log("로그인 성공");
-} else {
-    // 조건이 거짓(false)일 때 실행
-    console.log("비밀번호가 틀렸습니다");
-}</code></pre>
-
-        <div class="demo-box">
-            <p class="text-gray">테스트용 정답 비밀번호는 <code class="code-crimson">1234</code> 입니다.</p>
-            <label>비밀번호: <input type="password" id="if-password" placeholder="1234를 입력해보세요"></label>
-            <button id="if-btn">로그인</button>
-            <p class="output" id="if-output">결과가 여기에 표시됩니다.</p>
+        <a href="#practice" data-goto="1">→</a>
+      </article>
+      <article id="lessonRow-2">
+        <strong>02</strong>
+        <div>
+          <label>LOGIC</label>
+          <h3>조건문으로 장면 전환하기</h3>
+          <p>상황에 따라 다른 화면을 보여주는 방법</p>
+          <small>◷ 05분　 <span class="lesson-status" id="status-2" data-status="locked">🔒 잠금 해제 전</span></small>
         </div>
-    </section>
-
-    <hr>
-
-    <!-- =============================================== -->
-    <!-- 03. 반복문 (loop): 반복 -->
-    <!-- =============================================== -->
-    <section class="lesson-section">
-        <h2>03. 반복문 (loop): 반복</h2>
-        <p>단순하고 반복적인 작업을 컴퓨터가 빠르게 처리하도록 지시합니다. <span class="highlight-blue">게시판의 글 목록을 화면에 순서대로 나열</span>할 때처럼 필수적으로 사용됩니다.</p>
-
-        <pre><code>for (let i = 1; i &lt;= count; i++) {
-    // count번 만큼 반복 실행되는 코드
-    console.log(i + "번째 게시글");
-}</code></pre>
-
-        <div class="demo-box">
-            <label>게시글 개수: <input type="number" id="loop-count" placeholder="예: 5"></label>
-            <button id="loop-btn">게시글 목록 만들기</button>
-            <ul id="loop-output" class="board-list"></ul>
+        <a href="#practice" data-goto="2">→</a>
+      </article>
+      <article id="lessonRow-3">
+        <strong>03</strong>
+        <div>
+          <label>MOTION</label>
+          <h3>반복문으로 움직임 만들기</h3>
+          <p>같은 규칙으로 패턴과 리듬 만들기</p>
+          <small>◷ 05분　 <span class="lesson-status" id="status-3" data-status="locked">🔒 잠금 해제 전</span></small>
         </div>
-    </section>
+        <a href="#practice" data-goto="3">→</a>
+      </article>
+    </div>
+  </section>
 
-    <hr>
+  <section id="practice" class="practice">
+    <label>PLAYGROUND · p5.js</label>
+    <h2 id="practiceTitle">변수로 색상과 크기 다루기 <small id="practiceStep">실습 01 / 03</small></h2>
 
-    <!-- =============================================== -->
-    <!-- 04. 함수 (Function): 묶기 -->
-    <!-- =============================================== -->
-    <section class="lesson-section">
-        <h2>04. 함수 (Function): 묶기</h2>
-        <p>특정 목적을 위한 코드 여러 줄을 하나로 묶어 이름을 붙여둔 '명령어 세트'입니다. <span class="highlight-blue">'결제 처리' 함수</span>를 한 번 만들어두면, 필요할 때마다 코드를 다시 짤 필요 없이 그 블록만 불러와서 재사용할 수 있습니다.</p>
+    <div class="tabs" id="lessonTabs">
+      <button class="tab active" data-lesson="1">01 · 변수</button>
+      <button class="tab" data-lesson="2" disabled>02 · 조건문 🔒</button>
+      <button class="tab" data-lesson="3" disabled>03 · 반복문 🔒</button>
+    </div>
 
-        <pre><code>function processPayment(itemName, amount) {
-    // 이 블록 안의 로직을 한 번만 작성해두고 계속 재사용합니다.
-    return itemName + " 결제 완료: " + amount + "원";
-}
-
-processPayment("커피", 4500);   // 재사용 1
-processPayment("책", 15000);    // 재사용 2</code></pre>
-
-        <div class="demo-box">
-            <button id="func-coffee-btn">커피 4,500원 결제</button>
-            <button id="func-book-btn">책 15,000원 결제</button>
-            <br>
-            <label>직접 입력: <input type="text" id="func-item" placeholder="상품명"></label>
-            <label><input type="number" id="func-amount" placeholder="금액"></label>
-            <button id="func-custom-btn">결제하기</button>
-            <p class="output" id="func-output">결제 내역이 여기에 표시됩니다.</p>
+    <!-- 01. 변수 -->
+    <div class="grid lesson-panel active" data-panel="1">
+      <div class="concept">
+        <label>TODAY'S CONCEPT</label>
+        <h3>변수는 작품의 재료를 담는 상자예요.</h3>
+        <p>색상, 크기, 속도처럼 바꾸고 싶은 값을 변수에 담아두면 코드를 매번 고치지 않아도 작품을 쉽게 조절할 수 있어요.</p>
+        <pre><code><b>let</b> circleSize = <i>120</i>;<br><b>let</b> circleColor = <em>'#FF5C35'</em>;<br><br><b>function</b> draw() {<br>&nbsp;&nbsp;<span>// 원을 화면에 그려요</span><br>&nbsp;&nbsp;fill(circleColor);<br>&nbsp;&nbsp;circle(200, 150, circleSize);<br>}</code></pre>
+        <small>✦ <b>TIP</b> 숫자나 색상 값을 바꾸고 실행해보세요.</small>
+      </div>
+      <div class="preview">
+        <label>LIVE PREVIEW · p5.js</label>
+        <h3>나의 첫 번째 도형 <span>● LIVE</span></h3>
+        <div class="canvas-wrap" id="canvas-1"></div>
+        <div class="controls">
+          <label>circleSize <output id="sizeOutput">120</output><input id="sizeRange" type="range" min="50" max="230" value="120"></label>
+          <label>circleColor <output id="colorOutput">#FF5C35</output><input id="colorPicker" type="color" value="#FF5C35"></label>
         </div>
-    </section>
+        <button id="runButton1">▶ 코드 실행하기</button>
+      </div>
+    </div>
 
-    <hr>
-
-    <!-- =============================================== -->
-    <!-- 05. 데이터 타입 (Type): 구분 -->
-    <!-- =============================================== -->
-    <section class="lesson-section">
-        <h2>05. 데이터 타입 (Type): 구분</h2>
-        <p>컴퓨터가 데이터를 정확하게 다룰 수 있도록 값의 종류를 분류하는 기준입니다. <code class="code-crimson">'123'</code>이 덧셈이 가능한 <span class="highlight-blue">숫자(Number)</span>인지, 화면에 보여줄 <span class="highlight-blue">텍스트(String)</span>인지, 맞다/틀리다를 나타내는 <span class="highlight-blue">불리언(Boolean)</span>인지를 구분합니다.</p>
-
-        <pre><code>typeof 123        // "number"
-typeof "123"      // "string"
-typeof true       // "boolean"
-
-123 + 1           // 124        (숫자 덧셈)
-"123" + 1         // "1231"     (문자열 이어붙이기)</code></pre>
-
-        <div class="demo-box">
-            <button id="type-number-btn">숫자 123 확인</button>
-            <button id="type-string-btn">문자열 "123" 확인</button>
-            <button id="type-boolean-btn">불리언 true 확인</button>
-            <br>
-            <button id="type-plus-number-btn">123 + 1 계산</button>
-            <button id="type-plus-string-btn">"123" + 1 계산</button>
-            <p class="output" id="type-output">결과가 여기에 표시됩니다.</p>
+    <!-- 02. 조건문 -->
+    <div class="grid lesson-panel" data-panel="2" hidden>
+      <div class="concept">
+        <label>TODAY'S CONCEPT</label>
+        <h3>조건문은 상황에 따라 다른 장면을 고르게 해요.</h3>
+        <p>if / else 는 변수의 값을 확인해서, 조건이 참이면 이 코드를, 거짓이면 저 코드를 실행하는 갈림길이에요. 시간(hour) 값 하나로 낮과 밤 장면을 완전히 바꿔볼게요.</p>
+        <pre><code><b>let</b> hour = <i>9</i>;<br><br><b>function</b> draw() {<br>&nbsp;&nbsp;<b>if</b> (hour &lt; <i>18</i>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;background(<em>'#bfe6ff'</em>); <span>// 낮</span><br>&nbsp;&nbsp;} <b>else</b> {<br>&nbsp;&nbsp;&nbsp;&nbsp;background(<em>'#1b1b3a'</em>); <span>// 밤</span><br>&nbsp;&nbsp;}<br>}</code></pre>
+        <small>✦ <b>TIP</b> hour 슬라이더를 18 언저리에서 움직여 보세요.</small>
+      </div>
+      <div class="preview">
+        <label>LIVE PREVIEW · p5.js</label>
+        <h3>낮과 밤 장면 전환 <span>● LIVE</span></h3>
+        <div class="canvas-wrap" id="canvas-2"></div>
+        <div class="controls">
+          <label>hour <output id="hourOutput">9시 ・ ☀️ 낮</output><input id="hourRange" type="range" min="0" max="23" value="9"></label>
         </div>
-    </section>
+        <button id="runButton2">▶ 코드 실행하기</button>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- 03. 반복문 -->
+    <div class="grid lesson-panel" data-panel="3" hidden>
+      <div class="concept">
+        <label>TODAY'S CONCEPT</label>
+        <h3>반복문은 같은 규칙을 여러 번 되풀이해요.</h3>
+        <p>for 문은 count번 만큼 같은 코드를 반복 실행해요. draw()는 p5.js가 1초에 60번씩 자동으로 다시 호출해주기 때문에, 반복문과 만나면 움직이는 패턴을 만들 수 있어요.</p>
+        <pre><code><b>let</b> count = <i>8</i>;<br><br><b>function</b> draw() {<br>&nbsp;&nbsp;background(<em>'#f3f0e8'</em>);<br>&nbsp;&nbsp;<b>for</b> (<b>let</b> i = <i>0</i>; i &lt; count; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span>// count번 반복해서 원을 그려요</span><br>&nbsp;&nbsp;&nbsp;&nbsp;circle(x(i), y(i), <i>30</i>);<br>&nbsp;&nbsp;}<br>}</code></pre>
+        <small>✦ <b>TIP</b> count를 늘려서 원 개수를, speed로 움직임 속도를 바꿔보세요.</small>
+      </div>
+      <div class="preview">
+        <label>LIVE PREVIEW · p5.js</label>
+        <h3>반복으로 만드는 움직임 <span>● LIVE</span></h3>
+        <div class="canvas-wrap" id="canvas-3"></div>
+        <div class="controls">
+          <label>count <output id="countOutput">8</output><input id="countRange" type="range" min="3" max="20" value="8"></label>
+          <label>speed <output id="speedOutput">30</output><input id="speedRange" type="range" min="0" max="100" value="30"></label>
+        </div>
+        <button id="runButton3">⏸ 애니메이션 멈추기</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="quiz">
+    <div>
+      <label>QUICK CHECK</label>
+      <h2>잠깐, 확인해볼까요?</h2>
+      <p>방금 배운 내용을 가볍게 테스트해보세요.<br>정답을 맞히면 다음 레슨이 열려요.</p>
+      <small id="quizStep">1 / 3　━━━━</small>
+    </div>
+    <div class="quiz-card">
+      <label id="quizLabel">Q. 01</label>
+      <h3 id="quizQuestion">원의 크기를 바꾸고 싶을 때<br>어떤 값을 수정해야 할까요?</h3>
+      <div class="answers" id="quizAnswers">
+        <button data-answer="wrong">A. circleColor</button>
+        <button data-answer="correct">B. circleSize</button>
+        <button data-answer="wrong">C. canvas</button>
+      </div>
+      <p id="quizFeedback"></p>
+    </div>
+  </section>
+
+  <footer class="bottom">LOOP. MEDIA ART CODE LAB <span>MADE FOR CURIOUS MINDS ↗</span></footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

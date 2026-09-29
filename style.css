@@ -1,121 +1,22 @@
-/* style.css */
-/* Basic/style.css의 기본 톤을 그대로 이어받아 작성했습니다. */
+:root{--ink:#20201e;--line:#dddcd6;--paper:#f7f7f3;--orange:#ff5c35;--yellow:#f4e95d;--dark:#262624}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,'Apple SD Gothic Neo',sans-serif;line-height:1.5}aside{position:fixed;width:250px;inset:0 auto 0 0;border-right:1px solid var(--line);padding:38px 25px;background:#f5f5f0;display:flex;flex-direction:column}.brand{font-size:22px;color:var(--ink);font-weight:700;text-decoration:none}.brand:first-letter,.brand span,label,em,mark{color:var(--orange)}aside>small{margin-top:67px;color:#aaa;font:10px monospace;letter-spacing:1px}nav{display:grid;gap:7px;margin-top:20px}nav a{color:#777;text-decoration:none;padding:11px 12px;font-size:14px}nav a.active{background:var(--yellow);color:var(--ink);font-weight:bold}.side-progress{margin-top:auto;font-size:12px}.side-progress b{float:right;font:11px monospace}.side-progress hr{border:0;border-top:5px solid var(--orange);margin:10px 0}.side-progress small{color:#999}.side-note{border-top:1px solid var(--line);padding-top:24px;margin-top:29px;color:var(--orange);display:flex;gap:10px}.side-note p{margin:0;color:#888;font-size:12px}.side-note b{color:var(--ink)}aside footer{margin-top:42px;color:#aaa;font:10px monospace}aside footer span{color:#6a6}main{margin-left:250px;max-width:1330px;padding:0 72px}header{height:88px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font:11px monospace;color:#aaa}header b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;font:12px Arial}.hero{display:grid;grid-template-columns:1fr 1fr;gap:9%;padding:78px 0 108px;align-items:center}.hero label,section>label,.concept>label,.preview>label,.quiz label,.lessons label{font:10px monospace;letter-spacing:1px}.hero h1{font-size:clamp(45px,5.2vw,78px);line-height:.99;letter-spacing:-5px;margin:24px 0;font-weight:600}.hero h1 em{font-style:normal;color:var(--orange)}.hero p{font-size:14px;color:#777;line-height:1.8}.hero small{font:10px monospace;color:#999;display:block;margin:25px 0 34px}.cta{display:inline-block;padding:15px 19px;background:var(--ink);color:#fff;text-decoration:none;font-size:13px}.hero-art{height:355px;background:#f0eddf;position:relative;overflow:hidden;background-image:linear-gradient(30deg,transparent 49%,#fff8 50%,transparent 51%),linear-gradient(90deg,transparent 49%,#fff8 50%,transparent 51%);background-size:43px 43px}.hero-art i{position:absolute;border-radius:50%}.hero-art i:nth-child(1){width:215px;height:215px;background:var(--orange);left:28%;top:20%;box-shadow:28px 34px #e64522}.hero-art i:nth-child(2){width:130px;height:130px;background:var(--yellow);right:-27px;top:-28px}.hero-art i:nth-child(3){width:58px;height:58px;background:#a69bf1;right:23%;bottom:19%}.hero-art span{position:absolute;left:21px;bottom:18px;font:10px/1.6 monospace;color:#777}.hero-art span b{color:var(--orange);font-weight:400}section{border-top:1px solid var(--line);padding:55px 0 95px}section h2{font-size:29px;letter-spacing:-2px;margin:8px 0 28px}section h2 small{float:right;font:10px monospace;color:#aaa;letter-spacing:0}.lessons{display:grid;gap:9px}.lessons article{border:1px solid var(--line);display:flex;align-items:center;padding:24px 27px;min-height:138px}.lessons article.current{border-color:var(--orange);background:#fff}.lessons strong{font:27px monospace;color:#aaa;width:72px}.lessons .current strong{color:var(--orange)}.lessons article>div{flex:1}.lessons h3{margin:5px 0 2px;font-size:18px;font-weight:500}.lessons p{margin:0;color:#89867e;font-size:12px}.lessons small{display:block;font:10px monospace;color:#aaa;margin-top:14px}.lessons mark{background:#fff0e9;border-radius:20px;padding:3px 8px}.lessons a{border:1px solid var(--line);border-radius:50%;width:38px;height:38px;display:grid;place-items:center;color:var(--ink);text-decoration:none}.practice{background:#fff;margin:0 -72px;padding-left:72px;padding-right:72px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.concept,.preview{border:1px solid var(--line);padding:28px}.concept{background:#f8f8f4}.concept h3{font-size:23px;line-height:1.2;letter-spacing:-1px;margin:34px 0 12px}.concept p{color:#777;font-size:13px}.concept pre{background:var(--dark);color:#f5f1e8;padding:18px;font:12px/1.8 monospace;overflow:auto}.concept pre b{color:#d5a3ff}.concept pre i{color:#ffab71;font-style:normal}.concept pre em{color:#b6d982}.concept pre span{color:#777}.concept>small{color:#8e8b82;font-size:11px}.preview h3{font-size:19px;margin:4px 0 18px}.preview h3 span{float:right;font:10px monospace;color:#888}.preview canvas{display:block;width:100%;height:auto;background:#f3f0e8}.controls{display:grid;gap:10px;margin:19px 0}.controls label{display:grid;grid-template-columns:100px 1fr 100px;align-items:center;font:10px monospace;color:#777}.controls output{text-align:right;color:var(--orange)}input[type=range]{grid-column:2/4;width:100%;accent-color:var(--orange)}input[type=color]{grid-column:3;width:100%;height:22px;border:0;padding:0}.preview button{width:100%;padding:13px;border:0;background:var(--orange);color:#fff;cursor:pointer}.quiz{display:grid;grid-template-columns:1fr 1.05fr;gap:15%;padding:94px 0}.quiz p{font-size:13px;color:#85827b}.quiz small{font:10px monospace;color:#999}.quiz-card{border:1px solid var(--line);padding:28px;background:#fff}.quiz-card h3{font-size:19px;line-height:1.4;margin:17px 0 24px}.answers{display:grid;gap:8px}.answers button{text-align:left;background:#fff;border:1px solid var(--line);padding:13px 15px;cursor:pointer}.answers button.correct{background:#eff7e9;border-color:#9bc487}.answers button.wrong{background:#fff0ea;border-color:#edaa94}.quiz-card p{min-height:18px;color:#4d8640}.bottom{border-top:1px solid var(--line);padding:22px 0 28px;color:#aaa;font:9px monospace;display:flex;justify-content:space-between}@media(max-width:900px){aside{width:190px;padding:28px 18px}main{margin-left:190px;padding:0 35px}.practice{margin:0 -35px;padding-left:35px;padding-right:35px}.hero,.grid,.quiz{grid-template-columns:1fr;gap:40px}}@media(max-width:620px){aside{position:static;width:100%;height:auto;padding:20px}aside>small,.side-progress,.side-note,aside footer{display:none}nav{display:flex;overflow:auto;margin-top:20px}nav a{white-space:nowrap}main{margin:0;padding:0 20px}.hero{padding:45px 0 65px}.hero h1{font-size:50px}.hero-art{height:280px}.practice{margin:0 -20px;padding:50px 20px 60px}.lessons article{padding:18px 15px}.lessons strong{width:45px;font-size:20px}.lessons h3{font-size:15px}.bottom{display:block;line-height:2}.bottom span{display:block}}
 
-body {
-    background-color: #f9f9f9;
-    font-family: "맑은 고딕", sans-serif;
-    line-height: 1.6;
-}
+/* ===============================================
+   실습 놀이터: 레슨 탭 + p5.js 캔버스 패널
+   (p5.js 라이브러리 연동 - 인터랙티브 실습 추가분)
+   =============================================== */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:1px solid var(--line);background:#fff;padding:10px 16px;font:11px monospace;letter-spacing:.5px;color:#777;cursor:pointer}
+.tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab:disabled{opacity:.4;cursor:not-allowed}
+.tab:not(:disabled):not(.active):hover{border-color:var(--orange);color:var(--orange)}
 
-h1, h2 {
-    color: #2980b9;
-}
+.lesson-panel{display:none}
+.lesson-panel.active{display:grid}
 
-hr {
-    width: 80%;
-    height: 3px;
-    background-color: silver;
-    border: none;
-    margin: 30px auto;
-}
+.canvas-wrap{line-height:0}
+.canvas-wrap canvas{display:block;width:100%;height:auto;background:#f3f0e8}
 
-.text-center { text-align: center; }
-.title-navy { color: navy; }
-.highlight-blue {
-    color: blue;
-    text-decoration: underline;
-}
-.text-gray { color: gray; }
-.code-crimson { color: crimson; }
+.lessons mark.done{background:#eaf5e4;color:#4d8640}
+.lessons article.done strong{color:#4d8640}
+.lessons article a[data-goto]{cursor:pointer}
 
-/* 각 개념(01~05)을 담는 하나의 실습 블록 */
-.lesson-section {
-    max-width: 640px;
-    margin: 0 auto 20px auto;
-    padding: 0 20px;
-}
-
-/* 코드 예시를 보여주는 회색 박스 */
-pre {
-    background-color: #2d2d2d;
-    color: #f5f5f5;
-    padding: 14px;
-    border-radius: 6px;
-    overflow-x: auto;
-    font-size: 14px;
-}
-
-pre code {
-    color: #f5f5f5;
-}
-
-/* 실제로 눌러보는 실습 영역 */
-.demo-box {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 16px;
-    margin-top: 10px;
-}
-
-.demo-box label {
-    display: inline-block;
-    margin: 6px 0;
-}
-
-.demo-box input {
-    padding: 5px 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    cursor: pointer;
-    padding: 6px 14px;
-    margin: 6px 4px 6px 0;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
-}
-
-button:hover {
-    background-color: #eee;
-}
-
-/* 실습 결과를 보여주는 출력창 */
-.output {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f1f8ff;
-    border-left: 4px solid #2980b9;
-    border-radius: 4px;
-}
-
-.output.success {
-    background-color: #eafaf1;
-    border-left-color: #27ae60;
-    color: #1e7e45;
-}
-
-.output.error {
-    background-color: #fdecea;
-    border-left-color: #e74c3c;
-    color: #c0392b;
-}
-
-/* 03. 반복문으로 생성되는 게시글 목록 */
-.board-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.board-list li {
-    background-color: #f1f8ff;
-    border: 1px solid #dceafd;
-    border-radius: 4px;
-    padding: 8px 12px;
-    margin-bottom: 6px;
-}
